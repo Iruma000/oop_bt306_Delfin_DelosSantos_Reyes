@@ -1,0 +1,775 @@
+
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+interface introduction {
+        void intro();
+}
+interface ending{
+    void pandulo();
+}
+
+class start implements introduction {
+    public void intro() {
+        System.out.println("====================================================================");
+        System.out.println("==============WELCOME TO THE WORLD==============");
+    }
+}
+class end implements ending {
+    public void pandulo(){
+        System.out.println("====================================================================");
+        System.out.println("==============END OF THE STORY==============");
+    }
+    }
+
+
+
+    
+public class Creation {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Creation mc = new Creation();
+        CharacterCustomization cc = mc.new CharacterCustomization();
+        
+        String name;
+        while (true) {
+        System.out.print("Enter your character's name: ");
+        String n = scanner.nextLine().trim();
+        
+        
+        if (!n.isEmpty()) { 
+            name = n;
+            break; }
+        else if (n.isEmpty()) { System.out.println("Invalid Input\nPlease enter alphabets first in your name.\n"); continue;}
+        
+        }
+        System.out.println("Enter your character's gender \n1.Male \n2.Female ");
+
+        String gender;
+        while (true) {
+        try {
+        int g = scanner.nextInt();
+        
+        if (g == 1) {
+            gender = "male"; break;
+        }
+        else if (g == 2) {
+            gender = "female"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+
+        System.out.println("Enter your character's skin type \n1. Pale \n2. Light \n3. Medium \n4. Tan \n5. Dark");
+        
+        String skinType;
+        while (true) {
+        try {
+        int s = scanner.nextInt();
+        
+        if (s == 1) {
+            skinType = "pale"; break;
+        }
+        else if (s== 2) {
+            skinType = "light"; break;
+        }
+        else if (s== 3) {
+            skinType = "medium"; break;
+        }
+        else if (s== 4) {
+            skinType = "tan"; break;
+        }
+        else if (s== 5) {
+            skinType = "dark"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+
+        System.out.println("Enter your character's hair style \n1. Curly \n2. Straight \n3. Bald \n4. Shorthair");
+       String hairStyle;
+      while (true) {
+        try {
+        int h = scanner.nextInt();
+        
+        if (h == 1) {
+            hairStyle = "Pale"; break;
+        }
+        else if (h== 2) {
+            hairStyle = "Light"; break;
+        }
+        else if (h== 3) {
+            hairStyle = "Medium"; break;
+        }
+        else if (h== 4) {
+            hairStyle = "Tan"; break;
+        }
+        else if (h== 5) {
+            hairStyle = "Dark"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+
+        System.out.println("Enter your character's face shape \n1. Oval \n2. Square \n3. Oblong");
+        String faceShape;
+      while (true) {
+        try {
+        int f = scanner.nextInt();
+        
+        if (f == 1) {
+            faceShape = "Oval"; break;
+        }
+        else if (f== 2) {
+            faceShape = "Square"; break;
+        }
+        else if (f== 3) {
+            faceShape = "Oblong"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+
+        System.out.println("Enter your character's hair color \n1. Blonde \n2. Black \n3. Brown \n4. Red \n5. White \n6. Pink \n7. Green \n8. Blue");
+       String hairColor;
+      while (true) {
+        try {
+        int hc = scanner.nextInt();
+        
+        if (hc == 1) {
+            hairColor = "Blonde"; break;
+        }
+        else if (hc == 2) {
+            hairColor = "Black"; break;
+        }
+        else if (hc == 3) {
+            hairColor = "Brown"; break;
+        }
+        else if (hc == 4) {
+            hairColor = "Red"; break;
+        }
+        else if (hc == 5) {
+            hairColor = "White"; break;
+        }
+        else if (hc == 6) {
+            hairColor = "Pink"; break;
+        }
+        else if (hc == 7) {
+            hairColor = "Green"; break;
+        }
+        else if (hc == 8) {
+            hairColor = "Blue"; break;
+            
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+
+        System.out.println("Enter your character's eye shape \n1. Almond eyes \n2. Round eyes \n3. Deep-set eyes");
+       String eyeShape;
+      while (true) {
+        try {
+        int e = scanner.nextInt();
+        
+        if (e == 1) {
+            eyeShape = "Almond eyes"; break;
+        }
+        else if (e == 2) {
+            eyeShape = "Round eye"; break;
+        }
+        else if (e == 3) {
+            eyeShape = "Deep-set eyes"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+
+        System.out.println("Enter your character's eye color \n1. Blue \n2. Green \n3. Brown \n4. Grey \n5. Hazel \n6. Red \n7. Violet");
+       String eyeColor;
+      while (true) {
+        try {
+        int ec = scanner.nextInt();
+        
+        if (ec == 1) {
+            eyeColor = "Blue"; break;
+        }
+        else if (ec == 2) {
+            eyeColor = "Green"; break;
+        }
+        else if (ec == 3) {
+            eyeColor = "Brown"; break;
+        }
+        else if (ec == 4) {
+            eyeColor = "Grey"; break;
+        }
+        else if (ec == 5) {
+            eyeColor = "Hazel"; break;
+        }
+        else if (ec == 6) {
+            eyeColor = "Red"; break;
+        }
+        else if (ec == 7) {
+            eyeColor = "Violet"; break;
+            
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+
+        System.out.println("Enter your character's eyebrows \n1. Flat \n2. Straight \n3. Curve");
+        String eyebrows;
+      while (true) {
+        try {
+        int eb = scanner.nextInt();
+        
+        if (eb == 1) {
+            eyebrows = "Flat"; break;
+        }
+        else if (eb == 2) {
+            eyebrows = "Straight"; break;
+        }
+        else if (eb == 3) {
+            eyebrows = "Curve"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+
+        System.out.println("Enter your character's nose shape \n1. Straight \n2. Fleshy \n3. Snub");
+        String noseShape;
+      while (true) {
+        try {
+        int ns = scanner.nextInt();
+        
+        if (ns == 1) {
+            noseShape = "Straight"; break;
+        }
+        else if (ns == 2) {
+            noseShape = "Fleshy"; break;
+        }
+        else if (ns == 3) {
+            noseShape = "Snub"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+
+        System.out.println("Enter your character's body builds \n1. Slim \n2. Skinny \n3. Muscular");
+        String bodyBuild;
+      while (true) {
+        try {
+        int bb = scanner.nextInt();
+        
+        if (bb == 1) {
+            bodyBuild = "Slim"; break;
+        }
+        else if (bb == 2) {
+            bodyBuild = "Skinny"; break;
+        }
+        else if (bb == 3) {
+            bodyBuild = "Muscular)"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+
+
+        System.out.println("Enter your character's clothing \n1. Shirts \n2. Pants \n3. Dresses");
+        String clothing;
+      while (true) {
+        try {
+        int c = scanner.nextInt();
+        
+        if (c == 1) {
+            clothing = "Slim"; break;
+        }
+        else if (c == 2) {
+            clothing = "Skinny"; break;
+        }
+        else if (c == 3) {
+            clothing = "Muscular)"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+
+        System.out.println("Enter your character's pets \n1. Dog \n2. Cat");
+        String pets;
+      while (true) {
+        try {
+        int p = scanner.nextInt();
+        
+        if (p == 1) {
+            pets = "Dog"; break;
+        }
+        else if (p == 2) {
+            pets = "Cat"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+        System.out.println("Enter your character's namePets \n1. Poppy \n2. Naafiri \n3. Janna \n4. Heimerdinger");
+      String namePets;
+      while (true) {
+        try {
+        int np = scanner.nextInt();
+        
+        if (np == 1) {
+            namePets = "Renekton"; break;
+        }
+        else if (np == 2) {
+            namePets = "Naafiri"; break;
+        }
+        else if (np == 3) {
+            namePets = "Lulu"; break;
+        }
+        else if (np == 4) {
+            namePets = "Heimerdinger"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+        System.out.println("Enter your character's accessories \n1. Necklace \n2. Bracelet \n3. Rings");
+        String accessories;
+      while (true) {
+        try {
+        int access = scanner.nextInt();
+        
+        if (access == 1) {
+            accessories = "Necklace"; break;
+        }
+        else if (access == 2) {
+            accessories = "Bracelet"; break;
+        }
+        else if (access == 3) {
+            accessories = "Ring"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+        System.out.println("Enter your character's footwear \n1. Shoes \n2. Heels");
+        String footwear;
+      while (true) {
+        try {
+        int fwear = scanner.nextInt();
+        
+        if (fwear == 1) {
+            footwear = "Shoes"; break;
+        }
+        else if (fwear == 2) {
+            footwear = "Heels"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); continue;} 
+        }
+        System.out.println("Enter your character's reputation \n1. Hero\n2. Villain\n3. Outlaw");
+        String reputation;
+      while (true) {
+        try {
+        int repu = scanner.nextInt();
+        
+        if (repu == 1) {
+            reputation = "Hero"; break;
+        }
+        else if (repu == 2) {
+            reputation = "Villain"; break;
+        }
+        else if (repu == 3) {
+            reputation = "Outlaw"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); } 
+        }
+
+        System.out.println("Enter your character's voice tone \n1. Deep \n2. High \n3. Calm \n4. Stuttering");
+        String voiceTone;
+      while (true) {
+        try {
+        int vc = scanner.nextInt();
+        
+        if (vc == 1) {
+            voiceTone = "Deep"; break;
+        }
+        else if (vc == 2) {
+            voiceTone = "High"; break;
+        }
+        else if (vc == 3) {
+            voiceTone = "Calm"; break;
+        }
+        else if (vc == 4) {
+            voiceTone = "Stuttering"; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only pick from the selection above: "); continue;
+        }
+            
+        } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); } 
+        }
+
+        System.out.print("Enter your character strength (1-10): ");
+        int strength;
+        while(true){
+            try{
+            strength = scanner.nextInt();
+            if(strength < 1 || strength > 10){
+                System.out.println("Invalid Strength");
+                continue;
+            }else{
+                break;
+            }
+            }catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); }
+        }
+        System.out.print("Enter your character dexterity (1-10): ");
+       int dexterity;
+        while(true){
+            try{
+            dexterity = scanner.nextInt();
+            if(dexterity < 1 || dexterity > 10){
+                System.out.println("Invalid Dexterity");
+            }else{
+                break;
+            }
+        }catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); }
+        }
+        System.out.print("Enter your character intelligence (1-10): ");
+       int intelligence;
+        while(true){
+            try{
+            intelligence = scanner.nextInt();
+            if(intelligence < 1 || intelligence > 10){
+                System.out.println("Invalid Intelligence");
+            }else{
+                break;
+            }
+            }catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); }
+        }
+        System.out.print("Enter your character wisdom (1-10): ");
+       int wisdom;
+        while(true){
+            try{
+            wisdom = scanner.nextInt();
+            if(wisdom < 1 || wisdom > 10){
+                System.out.println("Invalid Wisdom");
+            }else{
+                break;
+            }
+            }catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next(); }
+        }
+        System.out.print("Enter your character charisma (1-10): ");
+       int charisma;
+        while(true){
+            try{
+            charisma = scanner.nextInt();
+            if(charisma < 1 || charisma > 10){
+                System.out.println("Invalid Charisma");
+            }else{
+                break;
+            }
+            } catch (InputMismatchException e) {System.out.print("Please only enter numerical inputs: "); scanner.next();}
+        }
+        System.out.print("Do you want to play in Hard Mode or Normal Mode? (H/N): ");
+                boolean hardMode = false;      
+                    scanner.nextLine();
+        while (true) {
+
+        String difficultyMode = scanner.nextLine();
+        
+        if (difficultyMode.equalsIgnoreCase("h")) {
+            hardMode = true; break;
+        }
+        else if (difficultyMode.equalsIgnoreCase("n")) {
+            hardMode = false; break;
+        }
+        else {
+            System.out.println("Invalid Input");
+            System.out.print("Please only enter \'H\' or \'N\': "); continue;
+        }
+        }
+
+        if (hardMode == true) {
+            hstory istori = new hstory();
+            start simula = new start();
+            simula.intro();
+            cc.displaySummary(name, gender, skinType, hairStyle, faceShape, hairColor, eyeShape, eyeColor, eyebrows, noseShape, bodyBuild, clothing, pets, namePets, accessories, footwear, reputation, voiceTone, strength, dexterity, intelligence, wisdom, charisma);
+
+            System.out.println("\nHard Mode Short Story:");
+            System.out.println("In a world where challenges are relentless and danger lurks at every corner, " +
+                    "you, " + name + ", have chosen the path of the hardened adventurer. Your journey will test " +
+                    "your skills to the limit as you face foes of unimaginable strength and uncover secrets " +
+                    "that can change the course of history.");
+            end huli = new end();
+            huli.pandulo();
+
+        } else {
+            nstory istori = new nstory();
+            start simula = new start();
+            simula.intro();
+            cc.displaySummary(name, gender, skinType, hairStyle, faceShape, hairColor, eyeShape, eyeColor, eyebrows, noseShape, bodyBuild, clothing, pets, namePets, accessories, footwear, reputation, voiceTone, strength, dexterity, intelligence,wisdom, charisma);
+
+            System.out.println("\nNormal Mode Short Story:");
+            System.out.println("Welcome, " + name + ", to a world of wonders and challenges. As you embark on " +
+                    "your journey, you will encounter friends and foes alike. The fate of this realm rests " +
+                    "in your hands, and your choices will shape the destiny of all who inhabit it.");
+            end huli = new end();
+            huli.pandulo();
+        }
+    }
+    
+abstract class reqCharacterCustomization {
+    abstract public void displaySummary(String name, String gender, String skinType, String hairStyle, String faceShape, String hairColor, String eyeShape, String eyeColor, String eyebrows, String noseShape, String bodyBuild, String clothing, String pets, String namePets, String accessories, String footwear, String reputation, String voiceTone, int strength, int dexterity, int intelligence, int wisdom, int charisma
+    );
+}
+
+    class CharacterCustomization extends reqCharacterCustomization {
+
+        private String name;
+        private int gender;
+        private String skinType;
+        private String hairStyle;
+        private String faceShape;
+        private String hairColor;
+        private String eyeShape;
+        private String eyeColor;
+        private String eyebrows;
+        private String noseShape;
+        private String bodyBuild;
+        private String clothing;
+        private String pets;
+        private String namePets;
+        private String accessories;
+        private String footwear;
+        private String reputation;
+        private String voiceTone;
+        private int strength;
+        private int dexterity;
+        private int intelligence;
+        private int wisdom;
+        private int charisma;
+        
+         public void setname (String name, int gender, String skinType, String hairStyle, String faceShape, String hairColor, String eyeShape, String eyeColor, String eyebrows, String noseShape, String bodyBuild, String clothing, String pets, String namePets, String accessories, String footwear, String reputation, String voiceTone, int strength, int dexterity, int intelligence, int wisdom, int charisma
+    ){
+        this.name = name;
+        this.gender = gender;
+        this.skinType = skinType;
+        this.hairStyle = hairStyle;
+        this.faceShape = faceShape; 
+        this.hairColor = hairColor;
+        this.eyebrows = eyebrows;
+        this.noseShape = noseShape;
+        this.bodyBuild = bodyBuild;
+        this.clothing = clothing;
+        this.pets = pets;
+        this.namePets = namePets;
+        this.accessories = accessories;
+        this.footwear = footwear;
+        this.reputation = reputation;
+        this.voiceTone = voiceTone;
+        this.strength = strength;
+        this.dexterity = dexterity;
+        this.intelligence = intelligence;
+        this.wisdom = wisdom;
+        this.charisma = charisma;
+    }
+
+        
+
+         public String getName() {
+        return name;
+    }
+
+    public int getGender() {
+        return gender;
+    }
+
+    public String getSkinType() {
+        return skinType;
+    }
+
+    public String getHairStyle() {
+        return hairStyle;
+    }
+
+    public String getFaceShape() {
+        return faceShape;
+    }
+
+    public String getHairColor() {
+        return hairColor;
+    }
+
+    public String getEyeShape() {
+        return eyeShape;
+    }
+
+    public String getEyeColor() {
+        return eyeColor;
+    }
+
+    public String getEyebrows() {
+        return eyebrows;
+    }
+
+    public String getNoseShape() {
+        return noseShape;
+    }
+
+    public String getBodyBuild() {
+        return bodyBuild;
+    }
+
+    public String getClothing() {
+        return clothing;
+    }
+
+    public String getPets() {
+        return pets;
+    }
+
+    public String getNamePets() {
+        return namePets;
+    }
+
+    public String getAccessories() {
+        return accessories;
+    }
+
+    public String getFootwear() {
+        return footwear;
+    }
+
+    public String getReputation() {
+        return reputation;
+    }
+
+    public String getVoiceTone() {
+        return voiceTone;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public int getDexterity() {
+        return dexterity;
+    }
+
+    public int getIntelligence() {
+        return intelligence;
+    }
+
+    public int getWisdom() {
+        return wisdom;
+    }
+
+    public int getCharisma() {
+        return charisma;
+    }
+
+    public void displaySummary(String name, String gender, String skinType, String hairStyle, String faceShape, String hairColor, String eyeShape, String eyeColor, String eyebrows, String noseShape, String bodyBuild, String clothing, String pets, String namePets, String accessories, String footwear, String reputation, String voiceTone, int strength, int dexterity, int intelligence, int wisdom, int charisma) {
+
+        System.out.println("\nCharacter Customization Summary:");
+        System.out.println("Name: " + name);
+        System.out.println("Gender: " + gender);
+        System.out.println("Skin Type: " + skinType);
+        System.out.println("Hair Style: " + hairStyle);
+        System.out.println("Face Shape: " + faceShape);
+        System.out.println("Hair Color: " + hairColor);
+        System.out.println("Eye Shape: " + eyeShape);
+        System.out.println("Eye Color: " + eyeColor);
+        System.out.println("Eyebrows: " + eyebrows);
+        System.out.println("Nose Shape: " + noseShape);
+        System.out.println("Body Build: " + bodyBuild);
+        System.out.println("Clothing: " + clothing);
+        System.out.println("Pets: " + pets);
+        System.out.println("Name of Pets: " + namePets);
+        System.out.println("Accessories: " + accessories);
+        System.out.println("Footwear: " + footwear);
+        System.out.println("Reputation: " + reputation);
+        System.out.println("Voice Tone: " + voiceTone);
+        System.out.println("Strength: " + strength);
+        System.out.println("Dexterity: " + dexterity);
+        System.out.println("Intelligence: " + intelligence);
+        System.out.println("Wisdom: " + wisdom);
+        System.out.println("Charisma: " + charisma);
+    }
+  }
+}
+
+class hstory {
+   hstory(){
+       System.out.println("You have chosen Hard mode");
+   } 
+    
+}
+class nstory {
+   nstory(){
+       System.out.println("You have chosen Normal mode");
+   } 
+    
+}
